@@ -1,0 +1,103 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: #f2f2f2;
+    color: #323232;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.container{
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+section:last-child{
+    border-bottom: none;
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img.avatar{
+    width: 130px;
+}
+
+.my-name{
+    font-size: 48px;
+    line-height: 1;
+}
+
+.my-title{
+    font-size: 24px;
+    font-weight: 300;
+    color: #9c0890;
+}
+
+.links{
+    float: right;
+}
+
+.job{
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid lightgray;
+}
+
+.job:last-child{
+    border-bottom: none;
+}
+
+.job-title-container{ 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.job-company{
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
