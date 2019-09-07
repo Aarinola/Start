@@ -35,7 +35,9 @@ section {
 }
 
 section:last-child{
-    border-bottom: none;
+    border-bottom: none;   
+    display: flex;
+    justify-content: center;
 }
 
 .section-title{
@@ -84,20 +86,104 @@ img.avatar{
     line-height: 1.2;
 }
 
+section .contact-me{
+    clear: clear both;
+    display: inline-block;
+    justify-content: center;
+}
 
+.contact{
+    margin: 12px 0;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #727171;
+    line-height: 0.5em;
+}
 
+.contact h3 span{
+    display: inline-block;
+}
 
+.contact.active h3 span{
+    transform: rotate(45deg);
+    float: right;
+}
+.contact.active:hover{
+    background-color: #fff;
+    color: #727171;
+}
+.contact:hover{
+    background-color: #f1eeee;
+    color: #727070;
+}
 
+.contact.active{
+    width: 500px;
+    min-height: 300px;
+}
 
+form{
+    margin: 0 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+form .row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+form .row .col-2{
+    /* width: calc(97% - 10px); */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+form .row .col-2:nth-child()
 
+form .row .col-1{
+    width: calc(97% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.contact input.text,
+.contact textarea{
+    width: 100%;
+    border: 1px solid #727171;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 18px;
+    font-family: consolas;
+    margin: 3px;
+}
 
+.contact textarea{
+    height: 120px;
+    margin-top: 20px;
+}
+.contact input[type="submit"]{
+    border: 2px solid #727171;
+    padding: 8px;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: consolas;
+    outline: none;
+    cursor: pointer;
+    background: #727171;
+    color: #fff;
+    margin: 8px 0 0 3px;
+    border-radius: 5%;
+}
+.contact form{
+    visibility: hidden;
+    display: none;
+}
 
-
-
-
-
-
-
-
+.contact.active form{
+    visibility: visible;
+    display: block;
+}
